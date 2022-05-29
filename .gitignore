@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#sanityfiles
+/newsanitymedium
+
 # next.js
 /.next/
 /out/
