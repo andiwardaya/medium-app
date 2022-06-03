@@ -11,7 +11,7 @@ const Hero = () => {
           is a place to write, read, and connect
         </h1>
         <h2>
-          it's easy and free to post your thinking on any topic and connect
+          it is easy and free to post your thinking on any topic and connect
           withe millions of readers.
         </h2>
       </div>

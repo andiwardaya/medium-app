@@ -172,7 +172,7 @@ const Post = ({ post }: Props) => {
         <h3 className="text-2xl  font-bold">Comments</h3>
         <hr />
 
-        {post.comments.map((comment: any) => (
+        {post.comments.map((comment) => (
           <div key={comment._id}>
             <p>
               <span className="font-bold">{comment.name}</span>{" "}

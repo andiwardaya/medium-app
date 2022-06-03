@@ -22,30 +22,28 @@ const Home = ({ posts }: Props) => {
       {/* post */}
       <div className="grid grid-cols-1  p-6 sm:grid-cols-2  lg:grid-cols-3 gap-6  md:grid-cols-3 md:gap-6 md:p-6 ">
         {posts.map((post) => (
-          <div className="">
-            <Link key={post._id} href={`/post/${post.slug.current}`}>
-              <div className="group cursor-pointer  border border-gray-500  rounded-lg overflow-hidden h-50  ">
-                <img
-                  className=" h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
-                  src={urlFor(post.mainImage).url()!}
-                  alt="blogMainImage"
-                />
-                <div className="flex justify-between p-5 bg-white">
-                  <div>
-                    <p className="font-bold uppercase">{post.title}</p>
-                    <p className="text-sm">
-                      {post.description} by {post.author.name}
-                    </p>
-                  </div>
-                  <img
-                    className="w-12 h-12 rounded-full"
-                    src={urlFor(post.author.image).url()!}
-                    alt="authorImage"
-                  />
+          <Link key={post._id} href={`/post/${post.slug.current}`}>
+            <div className="group cursor-pointer  border border-gray-500  rounded-lg overflow-hidden h-50  ">
+              <img
+                className=" h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
+                src={urlFor(post.mainImage).url()!}
+                alt="blogMainImage"
+              />
+              <div className="flex justify-between p-5 bg-white">
+                <div>
+                  <p className="font-bold uppercase">{post.title}</p>
+                  <p className="text-sm">
+                    {post.description} by {post.author.name}
+                  </p>
                 </div>
+                <img
+                  className="w-12 h-12 rounded-full"
+                  src={urlFor(post.author.image).url()!}
+                  alt="authorImage"
+                />
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
