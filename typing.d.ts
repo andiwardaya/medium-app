@@ -1,4 +1,5 @@
 export interface Post {
+  comments: any;
   _id: string;
   _createAt: string;
   title: string;
