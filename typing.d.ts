@@ -1,5 +1,4 @@
 export interface Post {
-  comments: any;
   _id: string;
   _createAt: string;
   title: string;
@@ -7,7 +6,7 @@ export interface Post {
     name: string;
     image: string;
   };
-  comment: Comment[];
+  comments: Comment[];
   description: string;
   mainImage: {
     asset: {
